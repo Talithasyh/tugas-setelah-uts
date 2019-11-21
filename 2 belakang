@@ -1,0 +1,24 @@
+#include <iostream>
+
+using namespace std;
+
+struct titik {
+	int x, y;
+};
+
+int main() {
+	struct titik a, b;
+	double jarak_titik;
+	cout << "titik P1 \nx : ";
+	cin >> a.x;
+	cout << "y : ";
+	cin >> a.y;
+	cout << endl;
+	cout << "titik P2 \nx : ";
+	cin >> b.x;
+	cout << "y : ";
+	cin >> b.y;
+	cout << endl;
+	jarak_titik = ((a.x - b.x), 2) + ((a.y - b.y), 2);
+	cout << "Jarak titik P1 dan titik P2 = " << jarak_titik;
+}
