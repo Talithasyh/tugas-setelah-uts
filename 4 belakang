@@ -1,0 +1,56 @@
+#include <iostream>
+
+using namespace std;
+
+struct {
+int jam;
+int menit;
+int detik;
+} pertama, kedua, durasi;
+
+int main()
+{
+
+cout <<"jam pertama --------" <<endl;
+cout <<" Jam : "; cin >>pertama.jam;
+cout <<" Menit : "; cin >>pertama.menit;
+cout <<" Detik : "; cin >>pertama.detik;
+
+
+cout <<endl <<endl;
+
+
+cout <<"jam kedua --------" <<endl;
+cout <<" Jam : "; cin >>kedua.jam;
+cout <<" Menit : "; cin >>kedua.menit;
+cout <<" Detik : "; cin >>kedua.detik;
+
+
+if ((kedua.detik - pertama.detik) < 0) {
+durasi.detik = (60 + kedua.detik) - pertama.detik;
+kedua.menit;
+}
+else {
+durasi.detik = kedua.detik - pertama.detik;
+}
+
+if ((kedua.menit- pertama.menit) < 0) {
+durasi.menit= (60 + kedua.menit) - pertama.menit;
+kedua.jam;
+}
+else {
+durasi.menit = kedua.menit- pertama.menit;
+}
+
+durasi.jam = kedua.jam - pertama.jam;
+
+
+
+cout <<endl <<endl;
+
+cout <<"durasi --------" <<endl;
+cout <<" durasi : " << durasi.jam << ":" << durasi.menit << ":" << durasi.detik << endl;
+
+
+return 0;
+}
